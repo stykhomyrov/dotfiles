@@ -65,6 +65,14 @@ vim.api.nvim_create_autocmd("BufWritePre", {
   end,
 })
 
+-- Go HTML templates: use the treesitter gotmpl parser
+vim.filetype.add({
+  extension = {
+    gohtml = "gotmpl",
+    gotmpl = "gotmpl",
+  },
+})
+
 -- Spell checking for markdown and git commit messages
 vim.api.nvim_create_autocmd("FileType", {
   pattern = { "markdown", "gitcommit" },

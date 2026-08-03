@@ -5,7 +5,7 @@ return {
   config = function()
     require("nvim-treesitter.configs").setup({
       ensure_installed = {
-        "python", "go", "gomod", "gosum",
+        "python", "go", "gomod", "gosum", "gotmpl", "html",
         "lua", "vim", "vimdoc",
         "markdown", "markdown_inline", "yaml",
       },
