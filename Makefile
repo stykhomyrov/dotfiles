@@ -1,4 +1,4 @@
-SHELL := /bin/zsh
+SHELL := /bin/sh
 STOW := stow
 STOW_FLAGS := --dotfiles --target=$(HOME)
 
