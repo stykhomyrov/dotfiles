@@ -1,7 +1,8 @@
 # dotfiles
 
-Configs for editorconfig, tmux, and NeoVim. Managed with GNU Stow
-in `--dotfiles` mode: `dot-config` in the repo becomes `.config` in `$HOME`.
+Configs for editorconfig, tmux, NeoVim, git, and Claude Code. Managed with
+GNU Stow in `--dotfiles` mode: `dot-config` in the repo becomes `.config`
+in `$HOME`, and `dot-claude` becomes `.claude`.
 
 ## Install on a new machine
 
@@ -20,6 +21,10 @@ stow nvim tmux editorconfig
 NeoVim installs its own plugins and language servers on first start.
 
 ## Notes
+
+- The `claude` package only tracks `CLAUDE.md` and `settings.json`. The rest
+  of `~/.claude` (credentials, session history, caches, projects) is runtime
+  state, not configuration, and stays untracked.
 
 - The tmux status color `#272c2e` matches a terminal background of
   `#2E3436`. Adjust it on machines with a different terminal theme.
